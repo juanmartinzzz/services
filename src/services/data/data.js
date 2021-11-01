@@ -104,9 +104,11 @@ const download = ({ table, attachment }) => {
 };
 
 const writeToFile = ({ table, stringContent }) => {
+  console.log('WARNING: the following operation fails if there is no src/data directory created');
   fs.writeFileSync(`${targetPathData}/${table}.js`, stringContent, {
     mode: 0o777,
   });
+  console.log('SUCCESS: src/data directory found');
 };
 
 const getFileDirectory = ({ type }) => {
