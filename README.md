@@ -14,6 +14,11 @@ Centralize, version and share Services across Rolls Apps.
 ```
 - Run copy-services using `npm run copy-services;`
 
+## Usage for compress-images
+- Add `compress-images` as a dev dependency for your app using 
+```npm i compress-images --save-dev```
+- Run compress-images using `npm run compress-images;`
+
 ## A note on Symlinks
 Creating a Symlink from `src/services` in Apps to `--> src/services` directory in this repo was attempted, but required extra Webpack configuration as a workaround in order to work. 
 
