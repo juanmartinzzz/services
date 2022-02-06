@@ -10,9 +10,9 @@ compress_images(
   { compress_force: false, statistic: true, autoupdate: true },
   false,
   { jpg: { engine: "mozjpeg", command: ["-quality", "55"] } },
-  { png: { engine: "pngquant", command: ["--quality=20-50"] } },
+  { png: { engine: "webp", command: ['-q', '60'] } },
   { svg: { engine: "svgo", command: "--multipass" } },
-  { gif: { engine: "gifsicle", command: ["--colors", "64", "--use-col=web"] } },
+  { gif: { engine: "gif2webp", command: ['-f', '80', '-mixed', '-q', '30', '-m', '2'] } },
   function(error, completed, statistic) {
     console.log("-------------");
     console.log(error);

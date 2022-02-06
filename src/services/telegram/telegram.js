@@ -1,3 +1,5 @@
+// Using this service adds a project dependency with got: https://www.npmjs.com/package/got
+// Install with `npm i got`
 const got = require('got');
 
 const getBot = ({botUrl}) => {};
