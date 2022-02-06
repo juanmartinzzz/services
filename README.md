@@ -16,7 +16,9 @@ Centralize, version and share Services across Rolls Apps.
 
 ## Usage for compress-images
 - Add `compress-images` as a dev dependency for your app using 
-```npm i compress-images --save-dev```
+```
+npm i compress-images --save-dev
+```
 - Run compress-images using `npm run compress-images;`
 
 ## A note on Symlinks
